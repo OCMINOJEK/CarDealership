@@ -22,43 +22,49 @@ h2, h3 {
 }
 
 .header__title {
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     font-weight: 700;
+    margin-bottom: 0.2em; /* Уменьшаем нижний отступ для названия */
 }
 
 .header__nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0.5em;
+    align-items: end;
 }
 
 .header__nav, .header__nav-secondary {
     margin: 0;
+    padding: 0.5em;
+
 }
 
 .header__menu {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 1em;
+    gap: 2em;
 }
 
 .header__menu li a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
+    font-size: 1.5em;
 }
 
 .header__menu li a:hover {
     text-decoration: underline;
+    display: flex;
 }
 
 .header__logo img {
-    width: 100px;
+    height: 18em; /* Оставляем тот же размер */
+    margin-left: 0;
+    margin-top: 0; /* Убираем большой верхний отступ */
+    margin-bottom: -8em; /* Добавляем отрицательный нижний отступ, чтобы логотип опустился */
 }
-
 /* Новости */
 .news {
     padding: 2em;
@@ -115,7 +121,7 @@ h2, h3 {
 }
 
 .models__item img {
-    width: 100px;
+    width: 400px;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -150,4 +156,9 @@ h2, h3 {
     padding: 1em;
     overflow: auto;
     margin-top: 2em;
+}
+
+#contacts {
+    margin-left: 2em; /* Добавляем отступ слева */
+    margin-top: 1em;
 }
