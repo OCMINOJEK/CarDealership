@@ -1,156 +1,155 @@
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+	font-family: 'Arial', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
 }
 
 h1 {
-    margin: 1em;
-    color: #fff;
+	margin: 1em;
+	color: #fff;
 }
-h2, h3 {
-    margin: 0;
-    padding: 0.0em;
-    color: #333;
+h2,
+h3 {
+	margin: 0;
+	padding: 0em;
+	color: #333;
 }
 
 .header {
-    background-color: #333;
-    padding: 1em;
+	background-color: #333;
+	padding: 1em;
 }
 
 .header__title {
-    font-size: 3em;
-    text-align: center;
-    font-weight: 700;
-    margin-bottom: 0.2em;
+	font-size: 3em;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 0.2em;
 }
 
 .header__nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
 }
 
-.header__nav, .header__nav-secondary {
-    margin: 0;
-    padding: 0.5em;
-
+.header__nav,
+.header__nav-secondary {
+	margin: 0;
+	padding: 0.5em;
 }
 
 .header__menu {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 2em;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	gap: 2em;
 }
 
 .header__menu li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 1.5em;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 1.5em;
 }
 
 .header__menu li a:hover {
-    text-decoration: underline;
-    display: flex;
+	text-decoration: underline;
+	display: flex;
 }
 
 .header__logo img {
-    height: 18em;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: -8em;
+	height: 18em;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: -8em;
 }
 /* Новости */
 .news {
-    padding: 2em;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 2em;
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .news__title {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+	font-size: 1.5em;
+	margin-bottom: 1em;
 }
 
 .news__item {
-    margin-bottom: 1em;
+	margin-bottom: 1em;
+	user-select: none;
 }
 
 .news__item summary {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .news__aside {
-    background-color: #f9f9f9;
-    padding: 1em;
-    border-left: 4px solid #333;
+	background-color: #f9f9f9;
+	padding: 1em;
+	border-left: 4px solid #333;
 }
 
 .news__aside h3 {
-    margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }
-
 
 .store-description {
-    padding: 2em;
-    background-color: #fff;
-    margin-top: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 2em;
+	background-color: #fff;
+	margin-top: 1em;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 .models {
-    padding: 2em;
-    background-color: #f4f4f9;
+	padding: 2em;
+	background-color: #f4f4f9;
 }
 
 .models__title {
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 1.5em;
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 1.5em;
 }
 
 .models__gallery {
-    display: flex;
-    justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 }
 
 .models__item img {
-    width: 400px;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
+	width: 400px;
+	height: auto;
+	transition: transform 0.3s ease-in-out;
 }
 
 .models__item img:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .models__aside {
-    margin-top: 2em;
-    padding: 1em;
-    background-color: #fff;
-    border-left: 4px solid #333;
+	margin-top: 2em;
+	padding: 1em;
+	background-color: #fff;
+	border-left: 4px solid #333;
 }
 
-
 .quote {
-    padding: 2em;
-    background-color: #fff;
-    font-style: italic;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 1em;
+	padding: 2em;
+	background-color: #fff;
+	font-style: italic;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 1em;
 }
 
 .quote p {
-    margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 #contacts {
-    margin-left: 2em;
-    margin-top: 1em;
+	margin-left: 2em;
+	margin-top: 1em;
 }
