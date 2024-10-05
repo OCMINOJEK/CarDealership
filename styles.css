@@ -15,7 +15,7 @@ h2, h3 {
     padding: 0.0em;
     color: #333;
 }
-/* Header */
+
 .header {
     background-color: #333;
     padding: 1em;
@@ -25,7 +25,7 @@ h2, h3 {
     font-size: 3em;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 0.2em; /* Уменьшаем нижний отступ для названия */
+    margin-bottom: 0.2em;
 }
 
 .header__nav-container {
@@ -60,10 +60,10 @@ h2, h3 {
 }
 
 .header__logo img {
-    height: 18em; /* Оставляем тот же размер */
+    height: 18em;
     margin-left: 0;
-    margin-top: 0; /* Убираем большой верхний отступ */
-    margin-bottom: -8em; /* Добавляем отрицательный нижний отступ, чтобы логотип опустился */
+    margin-top: 0;
+    margin-bottom: -8em;
 }
 /* Новости */
 .news {
@@ -95,7 +95,7 @@ h2, h3 {
     margin-bottom: 0.5em;
 }
 
-/* Описание магазина */
+
 .store-description {
     padding: 2em;
     background-color: #fff;
@@ -103,7 +103,7 @@ h2, h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Модели */
+
 .models {
     padding: 2em;
     background-color: #f4f4f9;
@@ -137,7 +137,7 @@ h2, h3 {
     border-left: 4px solid #333;
 }
 
-/* Цитаты и стилизованный текст */
+
 .quote {
     padding: 2em;
     background-color: #fff;
@@ -150,15 +150,7 @@ h2, h3 {
     margin-bottom: 0.5em;
 }
 
-.code {
-    background-color: #272822;
-    color: #f8f8f2;
-    padding: 1em;
-    overflow: auto;
-    margin-top: 2em;
-}
-
 #contacts {
-    margin-left: 2em; /* Добавляем отступ слева */
+    margin-left: 2em;
     margin-top: 1em;
 }
