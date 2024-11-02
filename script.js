@@ -50,26 +50,6 @@
         });
     }
 
-    // Функция для обработки отправки формы
-    function handleContactForm() {
-        const form = document.getElementById('contactForm');
-        if (form) {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-
-                // Получаем данные формы
-                const formData = new FormData(form);
-                const data = Object.fromEntries(formData.entries());
-
-                console.log('Отправка формы:', data);
-
-                alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
-
-                form.reset();
-            });
-        }
-    }
-
     // Добавляем обработчики после загрузки DOM
     document.addEventListener('DOMContentLoaded', () => {
         setActiveMenuItem();
