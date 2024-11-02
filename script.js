@@ -1,4 +1,3 @@
-// Immediately Invoked Function Expression (IIFE) для основного функционала
 (function() {
     // Сохраняем время начала загрузки
     const startTime = performance.now();
