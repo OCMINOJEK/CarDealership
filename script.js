@@ -62,13 +62,10 @@
                 const formData = new FormData(form);
                 const data = Object.fromEntries(formData.entries());
 
-                // Здесь можно добавить реальную отправку данных на сервер
                 console.log('Отправка формы:', data);
 
-                // Показываем уведомление
                 alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
 
-                // Очищаем форму
                 form.reset();
             });
         }
