@@ -54,7 +54,6 @@
     document.addEventListener('DOMContentLoaded', () => {
         setActiveMenuItem();
         addMenuInteractivity();
-        handleContactForm();
     });
 
     // Добавляем статистику после полной загрузки страницы
