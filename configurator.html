@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конфигуратор автомобиля</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="configurator.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <h1 class="header__title">Конфигуратор автомобиля</h1>
+</header>
+
+<section class="configurator">
+    <form id="carForm">
+        <h2>Выберите параметры автомобиля</h2>
+
+        <div class="form-group">
+            <label for="model">Модель:</label>
+            <div class="select-wrapper">
+                <select id="model">
+                    <option value="Panamera">Panamera</option>
+                    <option value="911">911</option>
+                    <option value="Taycan">Taycan</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="color">Цвет:</label>
+            <div class="select-wrapper">
+                <select id="color">
+                    <option value="Чёрный">Чёрный</option>
+                    <option value="Белый">Белый</option>
+                    <option value="Красный">Красный</option>
+                    <option value="Синий">Синий</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="engine">Тип двигателя:</label>
+            <div class="select-wrapper">
+                <select id="engine">
+                    <option value="Бензиновый">Бензиновый</option>
+                    <option value="Дизельный">Дизельный</option>
+                    <option value="Электрический">Электрический</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group form-group-inline">
+            <label for="leatherSeats">
+                Кожаный салон
+                <input type="checkbox" id="leatherSeats" value="Кожаный салон">
+                <span class="custom-checkbox"></span>
+            </label>
+            <label for="panoramicRoof">
+                Панорамная крыша
+                <input type="checkbox" id="panoramicRoof" value="Панорамная крыша">
+                <span class="custom-checkbox"></span>
+            </label>
+            <label for="premiumAudio">
+                Премиальная аудиосистема
+                <input type="checkbox" id="premiumAudio" value="Премиальная аудиосистема">
+                <span class="custom-checkbox"></span>
+            </label>
+        </div>
+
+        <button type="submit">Сгенерировать конфигурацию</button>
+        <button type="button" id="loadConfig">Загрузить сохранённую конфигурацию</button>
+    </form>
+
+    <div id="result" class="configurator__result"></div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 Porsche Автосалон</p>
+</footer>
+
+</body>
+</html>
