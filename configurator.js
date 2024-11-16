@@ -46,7 +46,6 @@ function loadConfiguration() {
 
     if (savedConfig) {
         const config = JSON.parse(savedConfig);
-        console.log(document.getElementById('model').value);
 
         document.getElementById('model').value = config.model;
         document.getElementById('color').value = config.color;
