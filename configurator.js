@@ -22,15 +22,31 @@ function generateConfiguration(event) {
         options.push('Премиальная аудиосистема');
     }
 
-    const configuration = `
-        <h3>Конфигурация автомобиля:</h3>
-        <p><strong>Модель:</strong> ${model}</p>
-        <p><strong>Цвет:</strong> ${color}</p>
-        <p><strong>Тип двигателя:</strong> ${engine}</p>
-        <p><strong>Дополнительные опции:</strong> ${options.length > 0 ? options.join(', ') : 'Нет'}</p>
-    `;
+    resultDiv.innerHTML = '';
 
-    resultDiv.innerHTML = configuration;
+    const heading = document.createElement('h3');
+    heading.textContent = 'Конфигурация автомобиля:';
+    resultDiv.appendChild(heading);
+
+    //<p><strong>label:</strong> ${value}</p>
+    function createParagraph(label, value) {
+        const paragraph = document.createElement('p');
+
+        const strong = document.createElement('strong');
+        strong.textContent = `${label}: `;
+        paragraph.appendChild(strong);
+
+        const text = document.createTextNode(value);
+        paragraph.appendChild(text);
+
+        return paragraph;
+    }
+
+    resultDiv.appendChild(createParagraph('Модель', model));
+    resultDiv.appendChild(createParagraph('Цвет', color));
+    resultDiv.appendChild(createParagraph('Тип двигателя', engine));
+    resultDiv.appendChild(createParagraph('Дополнительные опции', options));
+
 
     const carConfig = {
         model,
