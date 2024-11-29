@@ -508,3 +508,71 @@ button {
     pointer-events: none;
     color: white;
 }
+
+.preloader {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #FFD700;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-message {
+    display: none;
+    text-align: center;
+    color: #ff0000;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffebee;
+    border-radius: 4px;
+}
+
+.comments-section {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.comments-container {
+    display: grid;
+    gap: 1.5em;
+    padding: 1em;
+}
+
+.comment-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #eee;
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-email {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.comment-body {
+    line-height: 1.6;
+    color: #444;
+}
