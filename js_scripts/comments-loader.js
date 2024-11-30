@@ -11,7 +11,7 @@ async function loadComments() {
     const errorMessage = document.getElementById('error-message');
 
     try {
-        const {start, limit} = {start: 1, limit: 5}
+        const {start, limit} = getRandomRange()
 
         const response = await fetch(
             `https://jsonplaceholder.typicode.com/comments?_start=${start}&_limit=${limit}`
