@@ -23,6 +23,14 @@ function loadComments() {
         .then(comments => {
             commentsContainer.innerHTML = '';
 
+            // <article className="comment-card">
+            //     <div className="comment-header">
+            //         <span className="comment-author">${comment.name}</span>
+            //         <span className="comment-email">${comment.email}</span>
+            //     </div>
+            //     <p className="comment-body">${comment.body}</p>
+            // </article>
+
             comments.forEach(comment => {
                 const commentCard = document.createElement('article');
                 commentCard.classList.add('comment-card');
