@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-container', {
+        // Отключаем режим бесконечного слайдера
         loop: false,
         spaceBetween: 30,
         slidesPerView: 1,
 
         autoplay: {
             delay: 2000,
+            // Не останавливать автопрокрутку при взаимодействии с пользователем
             disableOnInteraction: false,
         },
 
