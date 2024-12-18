@@ -6,6 +6,12 @@
   <meta name="description" content="Автосалон с выбором различных моделей автомобилей.">
   <title>Porsche</title>
   <link rel="stylesheet" href="../styles.css">
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js_scripts/slider.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../js_scripts/script.js" defer></script>
 </head>
@@ -46,23 +52,20 @@
 
 <section id="models" class="models">
   <h2 class="models__title">Модели автомобилей</h2>
-  <div class="models__gallery">
-    <div id="panamera" class="models__item">
-      <a href="models.html#panamera">
-        <img src="../other/photo/panamera.jpg" alt="Panamera">
-      </a>
-    </div>
-    <div id="911" class="models__item">
-      <a href="models.html#911">
-        <img src="../other/photo/911.jpg" alt="911">
-      </a>
-    </div>
-    <div id="taycan" class="models__item">
-      <a href="models.html#taycan">
-        <img src="../other/photo/taycan.jpg" alt="Taycan">
-      </a>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../other/photo/panamera.jpg" alt="Panamera"></div>
+      <div class="swiper-slide"><img src="../other/photo/911.jpg" alt="911"></div>
+      <div class="swiper-slide"><img src="../other/photo/taycan.jpg" alt="Taycan"></div>
+      <div class="swiper-slide"><img src="../other/photo/718.jpg" alt="718"></div>
+      <div class="swiper-slide"><img src="../other/photo/panamera.jpg" alt="panamera"></div>
+      <div class="swiper-slide"><img src="../other/photo/carrera.jpg" alt="carrera"></div>
+      <div class="swiper-slide"><img src="../other/photo/cayenne.jpg" alt="cayenne"></div>
+      <div class="swiper-slide"><img src="../other/photo/gt3.jpg" alt="gt3"></div>
     </div>
   </div>
+
+
   <aside class="models__aside">
     <h3>Дополнительные услуги</h3>
     <p>Мы предлагаем финансирование с <strong>низким процентом</strong>.</p>
