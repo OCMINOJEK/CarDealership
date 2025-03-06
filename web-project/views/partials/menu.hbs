@@ -1,0 +1,30 @@
+<header class="header">
+  <section id="home">
+    <h1 class="header__title"><i>Porsche</i></h1>
+  </section>
+  <div class="header__auth">
+    {{#if isAuthenticated}}
+      <span class="logged-in">{{userName}}</span>
+      <button id="logoutButton">Выйти</button>
+    {{else}}
+      <input type="text" id="usernameInput" placeholder="Логин" />
+      <input type="password" id="passwordInput" placeholder="Пароль" />
+      <button id="loginButton">Войти</button>
+    {{/if}}
+  </div>
+  <div class="header__nav-container">
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/models">Модели</a></li>
+        <li><a href="/news">Новости</a></li>
+        <li><a href="/contacts">Контакты</a></li>
+        <li><a href="/configurator">Конфигуратор</a></li>
+        <li><a href="/comments">Комментарии</a></li>
+      </ul>
+    </nav>
+    <div class="header__logo">
+      <img src="/photo/logo.png" alt="Логотип">
+    </div>
+  </div>
+</header>

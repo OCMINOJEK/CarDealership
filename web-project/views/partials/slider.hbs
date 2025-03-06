@@ -1,0 +1,19 @@
+<section id="models" class="models">
+  <h2 class="models__title">Модели автомобилей</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {{#each cars}}
+        <div class="swiper-slide">
+          <img src="{{this.image}}" alt="{{this.name}}"><p>{{this.name}}</p>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+
+  <aside class="models__aside">
+    <h3>Дополнительные услуги</h3>
+    <p>Мы предлагаем финансирование с <strong>низким процентом</strong>.</p>
+    <p><b>Гарантия</b> на все модели до <i>5 лет</i>.</p>
+  </aside>
+</section>

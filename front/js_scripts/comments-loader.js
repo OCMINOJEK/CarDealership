@@ -6,7 +6,7 @@ function getRandomRange(){
 
 function loadComments() {
     const preloader = document.getElementById('preloader');
-    const commentsContainer = document.getElementById('comments-container');
+    const commentsContainer = document.getElementById('comments.hbs-container');
     const errorMessage = document.getElementById('error-message');
 
     preloader.style.display = 'block';

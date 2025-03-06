@@ -1,0 +1,14 @@
+<section class="table-section">
+  <h2>Таблица автомобилей</h2>
+  <div class="car-grid">
+    <div class="car-grid__header">Модель</div>
+    <div class="car-grid__header">Год выпуска</div>
+    <div class="car-grid__header">Цена</div>
+
+    {{#each table_cars}}
+      <div class="car-grid__item">{{this.name}}</div>
+      <div class="car-grid__item">{{this.year}}</div>
+      <div class="car-grid__item">{{this.price}}</div>
+    {{/each}}
+  </div>
+</section>

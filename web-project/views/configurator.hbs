@@ -1,0 +1,53 @@
+<section class="configurator">
+  <form id="carForm">
+    <h2>Выберите параметры автомобиля</h2>
+
+    <div class="form-group">
+      <label for="model">Модель:</label>
+      <div class="select-wrapper">
+        <select id="model">
+          {{#each models}}
+            <option value="{{this}}">{{this}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="color">Цвет:</label>
+      <div class="select-wrapper">
+        <select id="color">
+          {{#each colors}}
+            <option value="{{this}}">{{this}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="engine">Тип двигателя:</label>
+      <div class="select-wrapper">
+        <select id="engine">
+          {{#each engines}}
+            <option value="{{this}}">{{this}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group form-group-inline">
+      {{#each options}}
+        <label>
+          {{this}}
+          <input type="checkbox" id="{{this}}" value="{{this}}">
+          <span class="custom-checkbox"></span>
+        </label>
+      {{/each}}
+    </div>
+
+    <button type="submit">Сгенерировать конфигурацию</button>
+    <button type="button" id="loadConfig">Загрузить сохранённую конфигурацию</button>
+  </form>
+
+  <div id="result" class="configurator__result"></div>
+</section>

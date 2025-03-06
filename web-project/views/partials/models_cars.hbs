@@ -1,0 +1,12 @@
+<section id="models" class="models">
+  <h2 class="models__title">Модели автомобилей</h2>
+  <div class="models__gallery">
+    {{#each cars}}
+      <div id="{{this.id}}" class="models__item">
+        <a href="{{this.id}}">
+          <img src="{{this.image}}" alt="{{this.name}}">
+        </a>
+      </div>
+    {{/each}}
+  </div>
+</section>
